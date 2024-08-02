@@ -6,8 +6,8 @@ const PrivateText=({currUser})=>{
             const response=await fetch("http://localhost:3000/private/test", {
                 method: "get",
                 headers: {
-                    "content-type": "application/json",
-                    "authorization": localStorage.getItem("token")
+                    "Content-Type": "application/json",
+                    "Authorization": localStorage.getItem("token") // Ensure this is correctly formatted
                 }
             })
             const data=await response.json()

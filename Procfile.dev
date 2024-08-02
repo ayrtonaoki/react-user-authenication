@@ -1,0 +1,2 @@
+web: PORT=3001 cd frontend && npm start
+api: PORT=3000 cd api && rails s -p 3000
